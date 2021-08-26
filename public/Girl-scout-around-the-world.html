@@ -1,0 +1,482 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girl Scouting Around the world</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/whoweare.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-lato">
+  <div class="fixed h-16 w-16 bottom-5 right-5 hidden transition duration-500 rounded-50% z-50 flex justify-center items-center text-white goUp" onclick="goUp()" style="background-color: rgba(39, 39, 39, 0.582);">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+    <nav class="relative w-full flex justify-center items-center h-24 shadow-lg z-10 font-bold" data-aos="fade-down">
+      <div class="w-full h-full flex flex-wrap laptop:justify-center xs:justify-between items-center">
+        <div class="h-full flex items-center mobile:w-80 xs:w-64">
+          <img src="images/gsp-logo.jpg" class="w-full" alt="">
+        </div>
+        <div class="h-full laptop:flex xs:hidden justify-end items-center w-8/12">
+          <div class="px-4 flex justify-center text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full">Home</div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="badges" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
+            <span>Badges</span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
+            <div class="absolute left-0 w-52 flex overflow-hidden h-0 bg-gray-300 justify-center items-center flex-col top-full">
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Twinkler Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Star Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Junior Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Senior Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Cadet Girl Scout</a>
+            </div>
+          </div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500  h-full">Circulars</div>
+            <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="council" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
+            <span>Council Locator</span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
+            <div class="absolute bg-gray-200 left-0 w-52 flex overflow-hidden h-0 justify-center items-center flex-col top-full">
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Nothern Luzon Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Capital Luzon Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Southern Luzon Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Visayas Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Eastern Mindanao Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Western Mindanao Region</a>
+            </div>
+          </div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500  h-full">NP'S Message</div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="shop" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
+            <span>Shop NES </span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
+            <div class="absolute bg-gray-200 left-0 w-52 flex overflow-hidden h-0 justify-center items-center flex-col top-full">
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">NES FB Page</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-cente text-black hover:text-activeText hover:bg-gray-300">Shop</a>
+            </div>
+          </div>
+          <div class="px-4 flex justify-center text-black text-lg items-center cursor-pointer  h-full"><i class="fas fa-search"></i></div>
+            <div class="h-full bg-yellow-300 flex justify-center cursor-pointer items-center w-40">BE ONE OF US!</div>
+          </div>
+
+          <div class="text-2xl mobile:mr-10 xs:mr-5 hover:text-activeText transition duration-200 laptop:hidden xs:flex" onclick="nav2nd()">
+            <i class="fas fa-bars"></i>
+          </div>
+      </div>
+      <div class="absolute w-full bg-white transition duration-500 top-full items-between h-0 overflow-hidden laptop:hidden xs:flex flex-col" id="nav2nd">
+        <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+          <div class="ml-5">Home</div>
+        </a>
+        <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
+          <div class="ml-5">Badges</div>
+            <span class="mr-5"><i class="fas fa-sort-down"></i>
+          </div>
+          <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Twinkler Girl Scout</a>
+            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Star Girl Scout</a>
+            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Junior Girl Scout</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Senior Girl Scout</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Cadet Girl Scout</a>
+          </div>
+          <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+            <div class="ml-5">Circulars</div>
+          </a>
+          <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
+            <div class="ml-5">Council Locator</div>
+            <span class="mr-5"><i class="fas fa-sort-down"></i>
+          </div>
+          <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Nothern Luzon Region</a>
+            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Southern Luzon Region</a>
+            <a href="" href="#" class="w-ful5l py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Capital Luzon Region</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Visayas Region</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Eastern Mindanao Region</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Western Mindanao Region</a>
+          </div>
+        <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+          <div class="ml-5">NP's Message</div>
+        </a>
+        <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
+          <div class="ml-5">Shop NES</div>
+          <span class="mr-5"><i class="fas fa-sort-down"></i>
+        </div>
+        <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
+          <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">NES FB Page</a>
+          <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Shop</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="w-full flex justify-center items-center">
+      <div class="desktop:w-7/12 laptop:w-8/12 tablet:w-10/12 xs:w-11/12 flex flex-col justify-center items-center py-16">
+        <h1 class="mobile2:text-40px xs:text-2xl text-gray-700 mb-5 font-overlock  font-bold" data-aos="fade-in">Girl Scouting Around the World: My Experience at the 17th Int’l Camp Korea</h1>
+        <div class="w-full p-8" data-aos="fade-up">
+          <img src="images/aroundtheworld_!.jpg" class="w-full" alt="">
+        </div>
+        <div class="w-full">
+          <h1 class="text-gray-600 text-base font-bold" data-aos="fade-left"><em>Cadet Girl Scout Robina B. Balandra</em></h1>
+          <h1 class="text-gray-500 text-base font-bold" data-aos="fade-left"><em>Chief Girl Scout Medalist 2017</em></h1>
+          <h1 class="text-gray-500 text-base font-bold" data-aos="fade-left"><em>Alternate Girl Representative of Leyte Council</em></h1>
+          <h1 class="text-gray-500 text-base font-bold mb-5" data-aos="fade-left"><em>Visayas Region – Leyte Council</em></h1>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-right">
+            Growing up, I’ve closed my mind on the fact that the world isn’t small as I made it out to be — never expecting
+            to meet people of diverse backgrounds, cultures, and origins and never vying to enhance my world citizenship.
+            But thankfully, I was given the opportunity to represent the Girl Scouts of the Philippines in the
+            17th Girl Scout International Camp, Korea, in the World Jamboree Center located at Gangwon-do, Goseong
+            held on August 5-9, 2019, which turned out to be a great opportunity to broaden my views and way of thinking.
+          </p>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-left">
+            Strangely enough, considering that we were in Korea, the weather turned out to be really
+            hot during the camp which we were told to expect since it was summer. Thankfully, the heat
+            did not deter us from fully immersing ourselves in the course activities and programs. But,
+            the occasional breaks from the sun under a tree for some shade did help.
+          </p>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-right">
+            We could not help but admire our surroundings, everywhere we turned,
+            we saw green: from the well-structured layout of the campsite down to the clean pavements
+            that trailed toward the different parts of the camp. The World Jamboree Center was,
+            indeed, ideal for camping. This is my first international camp and from all that
+            I have experienced, I can truly say that joining international camps offers a unique
+            experience for every Girl Scout.
+          </p>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-left">
+            In this five-day camp, I experienced a lot of new and great things: watched K-Pop stars perform live;
+            joined the marine activity in which we were grouped and had to row a boat in the sea where we swam afterwards;
+            participated in different course activities aligned  with the programs of WAGGGS like the Free Being Me and
+            Speak Out for Gender Equality; even performed to showcase Filipino native dances. We also got to experience
+            what we would not have been able to experience if it were not for the camp: like the Military Experience and visiting
+            the Demilitarized Zone of Korea which I am sure will be memories of mine to be treasured forever.
+          </p>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-up">
+            Everyone in the camp looked forward to the badge and token swaps.
+            I gave badges, Filipino snacks, scarves, pins, and even socks to my new friends!
+            In return, I also got badges, snacks and delicacies, pins, scarves, keychains, and other souvenirs.
+          </p>
+        </div>
+        <div class="w-full">
+           <img src="images/aroundtheworld_2.jpg" class="w-full mb-5" data-aos="fade-right" alt="">
+           <img src="images/aroundtheworld_3.jpg" class="w-full mb-5" data-aos="fade-left" alt="">
+           <img src="images/aroundtheworld_4.jpg" class="w-full mb-5" data-aos="fade-right" alt="">
+           <img src="images/aroundtheworld_5.jpg" class="w-full mb-5" data-aos="fade-left" alt="">
+           <img src="images/aroundtheworld_6.jpg" class="w-full mb-5" data-aos="fade-right" alt="">
+           <img src="images/aroundtheworld_7.jpg" class="w-full mb-5" data-aos="fade-left" alt="">
+        </div>
+
+        <div class="w-full">
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-up">
+            We did not only exchange tokens among us campers. The more meaningful
+            trades we made were the stories of Girl Guiding from our respective countries;
+            the promises of keeping in touch even after camp; and the songs we sang in our
+            own language. Through this, we were able to embrace each other’s cultures.
+          </p>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-up">
+            The camp made us realize that we, Girl Guides and Girl Scouts
+            from all over the world, are all advocates of WAGGGS programs.
+            When we band together, we create a better world for everyone.
+          </p>
+          <p class="text-gray-500 text-base mb-5" data-aos="fade-up">
+            Indeed, Girl Scouting is a life-changing experience.  To belong to
+            this global movement, one must not be afraid to venture into the world;
+            to immerse oneself in international diversity; and to take risk and set the trend!
+          </p>
+        </div>
+
+        <div class="w-full flex">
+
+          <div class="w-24 h-10 bg-gradient-to-r from-blue-500  to-blue-400 flex overflow-hidden rounded-lg hover:from-blue-400 hover:to-blue-300 transition duration-200">
+            <a href="#" class="flex w-full">
+              <div class="w-5/12 h-full flex justify-center items-center text-sm text-white">
+                <i class="fab fa-facebook"></i>
+              </div>
+              <div class="w-7/12 h-full flex justify-center items-center text-xs text-white">
+                Share
+              </div>
+            </a>
+          </div>
+
+          <div class="w-24 h-10 bg-gradient-to-r from-blue-400  to-blue-300 flex overflow-hidden rounded-lg hover:from-blue-300 hover:to-blue-200 ml-3 transition duration-200">
+            <a href="#" class="flex w-full">
+              <div class="w-5/12 h-full flex justify-center items-center text-sm text-white ">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <div class="w-7/12 h-full flex justify-center items-center text-xs text-white">
+                Tweet
+              </div>
+            </a>
+          </div>
+
+          <div class="w-24 h-10 bg-gradient-to-r from-blue-500  to-blue-400 flex overflow-hidden rounded-lg hover:from-blue-400 hover:to-blue-300 ml-3 transition duration-200">
+            <a href="#" class="flex w-full">
+              <div class="w-5/12 h-full flex justify-center items-center text-sm text-white ">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="w-7/12 h-full flex justify-center items-center text-xs text-white">
+                Share
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- end -->
+    <div class="w-full pb-2 flex flex-wrap justify-center bg-green-600 relative">
+      <div class="laptop:w-4/12 xs:w-full flex flex-col justify-center items-center bg-yellow-500 laptop:px-5 xs:px-0 laptop:pt-0 xs:pt-8 laptop:pb-24 xs:pb-20" data-aos="fade-up">
+        <div class="flex justify-center items-center h-2/6">
+          <h1 class="text-bold laptop:text-23px xs:text-lg mb-5 font-overlock">BE AN ADVOCATE!</h1>
+        </div>
+        <div class="flex flex-col justify-between items-center h-4/6">
+          <div class="flex px-5 w-full mb-7">
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_1.png" class="w-full" alt="">
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_2.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>FBM/ABC</em> </p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_3.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Girl powered Nutrition</em> </p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_4.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Stop VAWG</em> </p>
+            </a>
+          </div>
+            <a href="#" class="px-4 py-2 bg-darkpurple text-white">LEARN MORE</a>
+          </div>
+      </div>
+
+      <div class="laptop:w-4/12 xs:w-full flex flex-col justify-center items-center laptop:px-5 xs:px-2 laptop:pt-0 xs:pt-8 laptop:pb-24 xs:pb-10">
+        <div class="flex justify-center items-center laptop:h-2/6 xs:h-1/6">
+          <h1 class="text-bold text-white laptop:text-23px xs:text-lg mb-5 font-overlock">BE ONE OF US</h1>
+        </div>
+        <div class="laptop:h-4/6 xs:h-5/6">
+          <div class="flex flex-wrap justify-between laptop:px-5 xs:px-0 w-full mb-7">
+
+            <div class="tablet:w-6/12 xs:w-full flex xs:flex-row flex-wrap justify-between items-center">
+              <div class="flex justify-center items-center relative mb-5 tablet:w-full xs:w-5/12 p-1" data-aos="zoom-in" id="beUs1" onmouseenter="fadein(this)" onmouseleave="fadeout(this)">
+                <div class="absolute w-full h-full flex justify-center items-center p-5 transition duration-500 opacity-0 bg-darkTransparent">
+                  <a href="#" class="text-center font-bold text-white text-sm">BECOME A GIRL SCOUT TO DAY1</a>
+                </div>
+                <div class="w-full">
+                  <img src="images/beoneUs_1.png" class="w-full" alt="">
+                </div>
+              </div>
+              <a href="#" class="px-2 py-3 bg-darkpurple text-white text-sm tablet:w-10/12 xs:w-6/12 text-center tablet:h-1/6 xs:h-2/6 flex justify-center items-center">JOIN TODAY!</a>
+            </div>
+
+            <div class="tablet:w-6/12 xs:w-full flex xs:flex-row flex-wrap laptop:justify-end xs:justify-between items-center">
+              <div class="flex justify-center items-center relative mb-5 tablet:w-full xs:w-5/12 p-1" data-aos="zoom-in" id="beUs2" onmouseenter="fadein(this)" onmouseleave="fadeout(this)">
+                <div class="absolute w-full h-full flex justify-center items-center p-5 transition duration-500 opacity-0 bg-darkTransparent">
+                  <a href="#" class="text-center font-bold text-white text-sm">ONCE A GIRL SCOUT ALWAYS A GIRL SCOUT</a>
+                </div>
+                <div class="w-full">
+                  <img src="images/beoneUs_2.png" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="px-2 py-3 bg-darkpurple text-white text-sm tablet:w-10/12 xs:w-6/12 text-center tablet:h-1/6 xs:h-2/6 flex justify-center items-center">
+               <a href="#" >
+                  <p>you WERE a Girl Scout?</p>
+                  <p class="text-xs">Take a Survey!</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="laptop:w-4/12 xs:w-full flex flex-col justify-center items-center bg-yellow-400 laptop:px-5 xs:px-0 laptop:pt-0 xs:pt-8 laptop:pb-24 xs:pb-36" data-aos="fade-up">
+        <div class="flex justify-center items-center h-2/6">
+          <h1 class="text-bold laptop:text-23px xs:text-lg mb-5 font-overlock">SUPPORT US!</h1>
+        </div>
+        <div class="flex flex-col justify-between items-center h-4/6">
+          <div class="flex px-5 w-full mb-7">
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_1.png" class="w-full" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Josefa Escoda Memento Fund</em></p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_2.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Friends of HZB</em></p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_3.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Friends of Ating Tahanan</em> </p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_4.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>GSP & Friends Foundation, Inc.</em></p>
+            </a>
+          </div>
+          <a href="#" class="px-4 py-2 bg-darkpurple text-white">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full relative flex justify-center items-center">
+      <div class="absolute w-32 h-32 z-10 rounded-50% overflow-hidden shadow-lg">
+        <img src="images/footerLogo.png" class="h-full w-full" alt="">
+      </div>
+    </div>
+
+    <div class="w-full py-5 flex flex-col justify-center items-center mt-20">
+      <p class="text-gray-500 mb-2" data-aos="fade-in">901 Padre Faura Street, Ermita, Manila</p>
+      <p class="text-gray-500" data-aos="fade-in">Trunkline: (632) 8-5238331 to 42</p>
+      <div class="flex mobile:mb-10 mobile:mt-10 xs:mb-6 xs:mt-6">
+        <a href="#" class="text-gray-500 mb-2 hover:text-activeText px-2" data-aos="fade-in">About Us</a>
+        <a href="#" class="text-gray-500 mb-2 hover:text-activeText px-2" data-aos="fade-in">Contact Us</a>
+      </div>
+      <p class="text-gray-500" data-aos="fade-in">Follow us on social media:</p>
+      <div class="flex mb-10 mt-5">
+        <div class="p-2 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.facebook.com/girlscoutsofthephilippines/" target="https://www.facebook.com/girlscoutsofthephilippines/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://twitter.com/girlscoutsph" target="https://twitter.com/girlscoutsph"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.instagram.com/girlscoutsph/" target="https://www.instagram.com/girlscoutsph/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.pinterest.ph/GirlScoutsPHILS/"target="https://www.pinterest.ph/GirlScoutsPHILS/"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.youtube.com/c/GIRLSCOUTSOFTHEPHILIPPINES1940" target="https://www.youtube.com/c/GIRLSCOUTSOFTHEPHILIPPINES1940"><i class="fab fa-youtube"></i></a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+
+    AOS.init()
+
+    function fadein (fadeinID) {
+      var parent = document.getElementById(fadeinID.id)
+      var child = parent.children
+      child[0].classList.remove('opacity-0')
+     }
+
+    function fadeout (fadeOutID) {
+      var parent = document.getElementById(fadeOutID.id)
+      var child = parent.children
+      child[0].classList.add('opacity-0')
+    }
+
+    var goUpp = document.querySelector('.goUp')
+    window.addEventListener('scroll', function() {
+      var scrolling = window.scrollY
+      if(scrolling == 0){
+        goUpp.classList.add('hidden')
+      } else{
+        goUpp.classList.remove('hidden')
+      }
+    })
+
+    function goUp () {
+      window.scrollTo({
+      top:0,
+      behavior:'smooth'
+      })
+    }
+
+    var swiper = new Swiper('.mySwiper', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop:true,
+      autoplay:{
+      delay:3000,
+      disableOnInteraction:false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })
+
+    function hover (id) {
+      var hover_id = id.id
+      const parentt = document.getElementById(hover_id)
+      const child = parentt.children
+      child[2].classList.remove('h-0')
+    }
+
+    function leave (id) {
+      var hover_id = id.id
+      const parentt = document.getElementById(hover_id)
+      const child = parentt.children
+      child[2].classList.add('h-0')
+    }
+
+    var pressed = false
+    function nav2nd () {
+      if(pressed === false){
+        pressed = true
+        document.getElementById('nav2nd').classList.remove('h-0')
+      } else{
+        pressed = false
+        document.getElementById('nav2nd').classList.add('h-0')
+      }
+    }
+
+    var index0 = false
+    var index1 = false
+    var index2 = false
+
+    const click = document.querySelectorAll('.click')
+    click.forEach( function(element, index) {
+      element.addEventListener('click', function() {
+        if(index == 0){
+          if(index0 === false){
+            index0 =true
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.remove('h-0')
+          } else{
+            index0 = false
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.add('h-0')
+          }
+        }
+
+        if(index == 1){
+          if(index1 === false){
+            index1 = true
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.remove('h-0')
+           } else{
+            index1 = false
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.add('h-0')
+          }
+        }
+
+        if(index == 2){
+          if(index2 === false){
+            index2 = true
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.remove('h-0')
+          } else{
+            index2 = false
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.add('h-0')
+          }
+        }
+
+      })
+    })
+
+
+    </script>
+</body>
+</html>

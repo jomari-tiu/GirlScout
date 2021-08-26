@@ -1,0 +1,700 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership-Girls Scout for the Philippines</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/whoweare.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-lato">
+  <div class="fixed h-16 w-16 bottom-5 right-5 hidden transition duration-500 rounded-50% z-50 flex justify-center items-center text-white goUp" onclick="goUp()" style="background-color: rgba(39, 39, 39, 0.582);">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+    <nav class="relative w-full flex justify-center items-center h-24 shadow-lg z-10 font-bold" data-aos="fade-down">
+      <div class="w-full h-full flex flex-wrap laptop:justify-center xs:justify-between items-center">
+        <div class="h-full flex items-center mobile:w-80 xs:w-64">
+          <img src="images/gsp-logo.jpg" class="w-full" alt="">
+        </div>
+        <div class="h-full laptop:flex xs:hidden justify-end items-center w-8/12">
+          <div class="px-4 flex justify-center text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full">Home</div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="badges" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
+            <span>Badges</span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
+            <div class="absolute left-0 w-52 flex overflow-hidden h-0 bg-gray-300 justify-center items-center flex-col top-full">
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Twinkler Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Star Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Junior Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Senior Girl Scout</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Cadet Girl Scout</a>
+            </div>
+          </div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500  h-full">Circulars</div>
+            <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="council" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
+            <span>Council Locator</span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
+            <div class="absolute bg-gray-200 left-0 w-52 flex overflow-hidden h-0 justify-center items-center flex-col top-full">
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Nothern Luzon Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Capital Luzon Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Southern Luzon Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Visayas Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Eastern Mindanao Region</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Western Mindanao Region</a>
+            </div>
+          </div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500  h-full">NP'S Message</div>
+          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="shop" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
+            <span>Shop NES </span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
+            <div class="absolute bg-gray-200 left-0 w-52 flex overflow-hidden h-0 justify-center items-center flex-col top-full">
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">NES FB Page</a>
+              <a href="#" class="w-full py-3 text-sm flex justify-center items-cente text-black hover:text-activeText hover:bg-gray-300">Shop</a>
+            </div>
+          </div>
+          <div class="px-4 flex justify-center text-black text-lg items-center cursor-pointer  h-full"><i class="fas fa-search"></i></div>
+            <div class="h-full bg-yellow-300 flex justify-center cursor-pointer items-center w-40">BE ONE OF US!</div>
+          </div>
+
+          <div class="text-2xl mobile:mr-10 xs:mr-5 hover:text-activeText transition duration-200 laptop:hidden xs:flex" onclick="nav2nd()">
+            <i class="fas fa-bars"></i>
+          </div>
+      </div>
+      <div class="absolute w-full bg-white transition duration-500 top-full items-between h-0 overflow-hidden laptop:hidden xs:flex flex-col" id="nav2nd">
+        <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+          <div class="ml-5">Home</div>
+        </a>
+        <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
+          <div class="ml-5">Badges</div>
+            <span class="mr-5"><i class="fas fa-sort-down"></i>
+          </div>
+          <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Twinkler Girl Scout</a>
+            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Star Girl Scout</a>
+            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Junior Girl Scout</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Senior Girl Scout</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Cadet Girl Scout</a>
+          </div>
+          <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+            <div class="ml-5">Circulars</div>
+          </a>
+          <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
+            <div class="ml-5">Council Locator</div>
+            <span class="mr-5"><i class="fas fa-sort-down"></i>
+          </div>
+          <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Nothern Luzon Region</a>
+            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Southern Luzon Region</a>
+            <a href="" href="#" class="w-ful5l py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Capital Luzon Region</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Visayas Region</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Eastern Mindanao Region</a>
+            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Western Mindanao Region</a>
+          </div>
+        <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+          <div class="ml-5">NP's Message</div>
+        </a>
+        <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
+          <div class="ml-5">Shop NES</div>
+          <span class="mr-5"><i class="fas fa-sort-down"></i>
+        </div>
+        <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
+          <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">NES FB Page</a>
+          <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Shop</a>
+        </div>
+      </div>
+    </nav>
+        <!-- body -->
+    <div class="w-full pt-16 pb-5 flex justify-center items-center">
+      <div class="desktop:w-10/12 xs:w-full flex flex-wrap justify-center items-center">
+
+      <div class="w-full flex justify-center items-center mt-5 mb-10">
+        <h1 class="text-40px font-overlock text-gray-700 font-bold"  data-aos="fade-in">Membership</h1>
+      </div>
+
+      <div class="tablet:w-10/12 xs:w-11/12 text-gray-500" data-aos="fade-up">
+        <h1 class="text-gray-700 text-2xl mb-5 font-bold">GSP Membership</h1>
+        <p class="mb-5">
+          Membership in the Girl Scouts of the Philippines is voluntary.
+          It is open to Filipinos residing here and abroad as well as non-Filipinos residing
+          in the Philippines who believe in the principles of Girl Scouting and subscribe
+          to the Girl Scout Promise and Law. It offers various and countless opportunities
+          and privileges for growth and self-development such as membership in the World
+          Association of Girl Guides and Girl Scouts (WAGGGS) and participation in the 8-Point Challenge Program.
+        </p>
+        <p class="mb-5">
+          Girls, young women and adults who believe in Girl Scouting and accept the
+          principles embodied in the Girl Scout Promise and Law have the opportunity
+          to be a member of the organization.
+        </p>
+        <p class="mb-5">
+          Girls, young women and adults who believe in Girl Scouting and accept the principles
+          embodied in the Girl Scout Promise and Law have the opportunity to be a member of the organization.
+        </p>
+
+        <h1 class="text-gray-600 text-2xl mb-5 font-bold">Membership Responsibility</h1>
+        <p class="mb-5">
+          As GSP member should subscribe to the Girl Scout Promise and Law and pay
+          the annual registration fee corresponding to the position she holds in the organization.
+          The amounts of registration fee per type of membership are as follows:
+        </p>
+      </div>
+
+      <div class="w-full flex flex-wrap">
+
+        <div class="tablet:w-6/12 xs:w-full" data-aos="fade-right">
+          <img src="images/memship1.jpg" class="w-full" alt="">
+        </div>
+
+        <div class="tablet:w-6/12 xs:w-full tablet:p-16 xs:p-5 text-gray-500">
+          <h1 class="text-gray-700 text-2xl font-bold tablet:text-left xs:text-center">Girl Members</h1>
+          <p class="text-gray-600 tablet:text-2xl xs:text-base tablet:text-left xs:text-center">(4-21 years old divided into five (5) age levels)</p>
+          <div class="w-full tablet:p-5 xs:p-2">
+            <table class="w-full text-gray-500" data-aos="fade-left">
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Twinkler (4-6 years old)</td>
+                <td class="pl-5">P50.00 per girl</td>
+              </tr>
+              <tr class="hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Star (6-9 years old)</td>
+                <td class="pl-5">P50.00 per girl</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5 font-bold">Junior (9-12 years old)</td>
+                <td class="pl-5">P50.00 per girl</td>
+              </tr>
+              <tr class="hover:bg-gray-200 h-12">
+                <td class="pl-5 font-bold">Senior (12-16 years old)</td>
+                <td class="pl-5">P50.00 per girl</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5 font-bold">Cadet (16-21 years old)</td>
+                <td class="pl-5">P50.00 per girl</td>
+              </tr>
+
+            </table>
+          </div>
+
+          <h1 class="text-gray-600 text-2xl font-bold mt-10 tablet:text-left xs:text-center">Adult Members</h1>
+          <div class="w-full tablet:p-5 xs:p-2">
+            <table class="w-full text-gray-500" data-aos="fade-left">
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Troop Leader</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class=" hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Co-Leader</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Barangay Committee Member</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class=" hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">District Committee Member</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Associate Member</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class=" hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Trefoil Guild Member</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Council Standing Committee Member</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class=" hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">GSP Staff</td>
+                <td class="pl-5">P50.00 per Adult</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Council Board Member (Councils)</td>
+                <td class="pl-5">P175.00 per Adult</td>
+              </tr>
+
+              <tr class="hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Council President</td>
+                <td class="pl-5">P400.00 per Adult</td>
+              </tr>
+              <tr class="bg-gray-100 hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Regional Committee Member (Region)</td>
+                <td class="pl-5">P400.00 per Adult</td>
+              </tr>
+              <tr class=" hover:bg-gray-200 h-12">
+                <td class="pl-5  font-bold">Central Board Member (National)</td>
+                <td class="pl-5">P500.00 per Adult</td>
+              </tr>
+            </table>
+            <p class="mt-10">Membership with GSP is annual. It starts on the date the registration fee is paid and expires one year thereafter.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-10/12 text-gray-500" data-aos="fade-up">
+        <h1 class="text-3xl text-gray-700 mb-5 tablet:text-left xs:text-center font-bold">Membership Benefits and Privileges</h1>
+        <p class="text-2xl text-gray-600 mb-5 tablet:text-left xs:text-center font-bold">For Girls and Young Women</p>
+        <ul class="tablet:pl-10 xs:pl-3">
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Fun, adventure, learning, character training and development through
+            experience in camp/ outdoor activities and badgework in the 8-Point Challenge,
+            community involvement activities, special programs, and international experience.
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Opportunity to explore other fields of interest and learn new skills useful in one’s life;
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Opportunity for leadership training and working with others.
+          </li>
+        </ul>
+        <p class="text-2xl mb-5 text-gray-600 font-bold">For Adults</p>
+        <ul class="tablet:pl-10 xs:pl-3">
+          <li class="mb-2" data-aos="fade-left">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Opportunity for service in the development of young people in the community.
+          </li>
+          <li class="mb-2" data-aos="fade-left">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Opportunity to bring out girls to encampment/trainings within and outside the country.
+          </li>
+          <li class="mb-2" data-aos="fade-left">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Opportunity to understand girls and young women and contribute to their development.
+          </li>
+          <li class="mb-2" data-aos="fade-left">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Training opportunities for personal growth and development, locally and internationally.
+          </li>
+          <li class="mb-2" data-aos="fade-left">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> A wide variety of service and development opportunities as troop leaders,
+            district field advisers, trainers, officers, and members of the boards and committees at council,
+            regional,national, and international levels in Girl Scouting.
+          </li>
+        </ul>
+        <p class="text-2xl mb-5 text-gray-600 font-bold">For Both</p>
+        <ul class="tablet:pl-10 xs:pl-3">
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> The privilege of membership in the WAGGGS and participation in its programs.
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> To represent their troop/barangay/city/municipality/province to Council, Regional, National and International Girl Guiding/Girl Scouting events.
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> The chance to stay and participate in the Girl Scout Program at the National and World Centers where opportunities for meeting friends are many.
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> The joy of taking the Promise and Law as a way of life.
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> The privilege of wearing the GSP uniform.
+          </li>
+          <li class="mb-2" data-aos="fade-right">
+            <span class="text-xs"><i class="fas fa-circle"></i></span> Entitlement to financial assistance in cases of death, accident and rape from the GSP-Membership Mutual Assistance Fund (GSP-MMAF)
+          </li>
+        </ul>
+      </div>
+      <div class="w-11/12 flex flex-wrap mt-10">
+        <div class="w-full flex flex-wrap">
+          <div class="tablet:w-6/12 xs:w-full tablet:pr-10 xs:pr-0 text-gray-500" data-aos="fade-left">
+            <p class="text-2xl mb-5 text-gray-600 font-bold">Membership Classification</p>
+            <p class="mb-5">
+              The <span class="font-bold">active members</span> are composed of Girl Scouts (4-21 years old belonging to the five age levels namely;
+              Twinkler, Star, Junior, Senior and Cadet), Charter/Life Members, Members of the Central Board, Members
+              of Special and Standing Committees, Members of the Regional Committees, Members of the Provincial/City
+              Councils, Members of the Barangay Committees, Troop Leaders and GSP Staff.
+            </p>
+            <p class="mb-5">
+              The <span class="font-bold">auxiliary members</span> on the other hand are composed of Honorary Members,
+              Associate Members, Trefoil Guild Members and Sustaining Members.
+            </p>
+            <p class="mb-5">
+              Hereunder are the descriptions of each type of membership.
+            </p>
+            <p>
+              <span class="font-bold"> Girl Scouts </span> – girls and young women carrying out the Girl Scouting Program are further classified according to
+              their varying needs and interests. They are as follows:
+            </p>
+            <ul class="pl-5 mt-5 mb-10">
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> <span class="font-bold">Twinkler</span>  (4-6 years old)
+              </li>
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> <span class="font-bold">Star</span>  (6-9 years)
+              </li>
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> <span class="font-bold">Junior</span>    (9-12 years old)
+              </li>
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> <span class="font-bold">Senior</span>    (12-16 years old)
+              </li>
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> <span class="font-bold">Cadet</span> (16-21 years old)
+              </li>
+            </ul>
+          </div>
+
+          <div class="tablet:w-6/12 xs:w-full tablet:mb-0 xs:mb-5" data-aos="fade-right">
+            <img src="images/memship2.jpg" class="w-full" alt="">
+          </div>
+
+          <div class="tablet:w-6/12 xs:w-full pr-10 text-gray-500" data-aos="fade-left">
+            <p class="mb-5">
+              <span class="font-bold">Charter/Life Members</span> – the original incorporators of the organization whose names are listed in
+              Commonwealth Act No. 542 as amended by Republic Act No. 4375, Presidential Decree 720 and Executive Order 267 and their
+              successors who shall be members for life and shall not exceed sixteen (16) in number.
+              They shall have perpetual succession and any vacancy that occurs shall be filled by the Central
+              Board as may be provided for in the By-Laws.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Members of the Central Board</span> – the highest policy-making and governing body of the GSP.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Members of Standing and Special Committees</span>
+                – those who perform advisory or recommendatory functions pertaining to their respective areas of work such as:
+                Membership, Program, Training, Communications, Personnel, Finance, Fund Development, National Equipment Service,
+                Real Properties and Buildings, Legal and International.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Members of the Regional Committee </span>– The committees help the Central Board in the management of
+                the Girl Scouting program and resources in the different Provincial/City Girl Scout Councils within their area of jurisdiction.
+            </p>
+          </div>
+
+          <div class="tablet:w-6/12 xs:w-full tablet:mb-0 xs:mb-5" data-aos="fade-right">
+            <img src="images/memship3.jpg" class="w-full" alt="">
+          </div>
+
+
+          <div class="tablet:w-6/12 xs:w-full pr-10 text-gray-500" data-aos="fade-left">
+            <p class="mb-5">
+              <span class="font-bold">Members of the Provincial/City Councils</span> – those who promote and extend membership to all girls and manage the policy implementation and coordination in the Provincial/City Councils.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Members of the District Committees</span> - those who coordinate Girl Scouting activities in the barangays within the districts.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Members of the Barangay Committees</span> – those who promote and develop Girl Scouting by supporting their Girl Scout troops
+              in the implementation of the Girl Scout Program.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Troop Leaders/Co-Leaders</span> – the adult women who help the girls in the troop to carry out the Girl Scout Program.
+            </p>
+            <p>
+              <span class="font-bold"> GSP Staff </span> – adult members who are:
+            </p>
+            <ul class="pl-5 mt-5 mb-10">
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> Regularly employed by the GSP as full time staff in varying positions at the National Headquarters, Regional, Council Offices and Camping and Program Centers.
+              </li>
+              <li>
+                <span class="text-xs"><i class="fas fa-circle"></i></span> Not regular employees of GSP, but opt to be members.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tablet:w-6/12 xs:w-full tablet:mb-0 xs:mb-5" data-aos="fade-right">
+            <img src="images/memship4.jpg" class="w-full" alt="">
+          </div>
+
+          <div class="w-full text-gray-500" data-aos="fade-up">
+            <h1 class="text-3xl mb-5 text-gray-600 font-b">Auxiliary Members</h1>
+            <p class="mb-5">
+              <span class="font-bold">Honorary Members</span> – outstanding citizens of the Philippines chosen by the Central
+              Board for the furtherance of Girl Scouting Program.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Associate Members</span> – those unable to work actively with a Girl Scout group but who are in interested in Girl Scouting and are willing to extend their support.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Trefoil Guild Members</span> – former Girl Scouts of the organization who wish to carry on the Girl Scout code in their community and to give support to the Movement.
+            </p>
+            <p class="mb-5">
+              <span class="font-bold">Sustaining Members</span> – those who extend financial and/or material support to the Movement.
+            </p>
+          </div>
+
+          <div class="mt-10 w-full flex">
+
+            <div class="h-8 w-8 overflow-hidden rounded-50% bg-blue-600 flex justify-center items-center text-white ml-3">
+              <a href="#" target="">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div class="h-8 w-8 overflow-hidden rounded-50% bg-blue-400 flex justify-center items-center text-white ml-3">
+              <a href="#" target="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="h-8 w-8 overflow-hidden rounded-50% bg-blue-700 flex justify-center items-center text-white ml-3">
+              <a href="#" target="">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- end -->
+    <div class="w-full pb-2 flex flex-wrap justify-center bg-green-600 relative">
+      <div class="laptop:w-4/12 xs:w-full flex flex-col justify-center items-center bg-yellow-500 laptop:px-5 xs:px-0 laptop:pt-0 xs:pt-8 laptop:pb-24 xs:pb-20" data-aos="fade-up">
+        <div class="flex justify-center items-center h-2/6">
+          <h1 class="text-bold laptop:text-23px xs:text-lg mb-5 font-overlock">BE AN ADVOCATE!</h1>
+        </div>
+        <div class="flex flex-col justify-between items-center h-4/6">
+          <div class="flex px-5 w-full mb-7">
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_1.png" class="w-full" alt="">
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_2.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>FBM/ABC</em> </p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_3.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Girl powered Nutrition</em> </p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/beanAdvocate_4.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Stop VAWG</em> </p>
+            </a>
+          </div>
+            <a href="#" class="px-4 py-2 bg-darkpurple text-white">LEARN MORE</a>
+          </div>
+      </div>
+
+      <div class="laptop:w-4/12 xs:w-full flex flex-col justify-center items-center laptop:px-5 xs:px-2 laptop:pt-0 xs:pt-8 laptop:pb-24 xs:pb-10">
+        <div class="flex justify-center items-center laptop:h-2/6 xs:h-1/6">
+          <h1 class="text-bold text-white laptop:text-23px xs:text-lg mb-5 font-overlock">BE ONE OF US</h1>
+        </div>
+        <div class="laptop:h-4/6 xs:h-5/6">
+          <div class="flex flex-wrap justify-between laptop:px-5 xs:px-0 w-full mb-7">
+
+            <div class="tablet:w-6/12 xs:w-full flex xs:flex-row flex-wrap justify-between items-center">
+              <div class="flex justify-center items-center relative mb-5 tablet:w-full xs:w-5/12 p-1" data-aos="zoom-in" id="beUs1" onmouseenter="fadein(this)" onmouseleave="fadeout(this)">
+                <div class="absolute w-full h-full flex justify-center items-center p-5 transition duration-500 opacity-0 bg-darkTransparent">
+                  <a href="#" class="text-center font-bold text-white text-sm">BECOME A GIRL SCOUT TO DAY1</a>
+                </div>
+                <div class="w-full">
+                  <img src="images/beoneUs_1.png" class="w-full" alt="">
+                </div>
+              </div>
+              <a href="#" class="px-2 py-3 bg-darkpurple text-white text-sm tablet:w-10/12 xs:w-6/12 text-center tablet:h-1/6 xs:h-2/6 flex justify-center items-center">JOIN TODAY!</a>
+            </div>
+
+            <div class="tablet:w-6/12 xs:w-full flex xs:flex-row flex-wrap laptop:justify-end xs:justify-between items-center">
+              <div class="flex justify-center items-center relative mb-5 tablet:w-full xs:w-5/12 p-1" data-aos="zoom-in" id="beUs2" onmouseenter="fadein(this)" onmouseleave="fadeout(this)">
+                <div class="absolute w-full h-full flex justify-center items-center p-5 transition duration-500 opacity-0 bg-darkTransparent">
+                  <a href="#" class="text-center font-bold text-white text-sm">ONCE A GIRL SCOUT ALWAYS A GIRL SCOUT</a>
+                </div>
+                <div class="w-full">
+                  <img src="images/beoneUs_2.png" class="w-full" alt="">
+                </div>
+              </div>
+              <div class="px-2 py-3 bg-darkpurple text-white text-sm tablet:w-10/12 xs:w-6/12 text-center tablet:h-1/6 xs:h-2/6 flex justify-center items-center">
+               <a href="#" >
+                  <p>you WERE a Girl Scout?</p>
+                  <p class="text-xs">Take a Survey!</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="laptop:w-4/12 xs:w-full flex flex-col justify-center items-center bg-yellow-400 laptop:px-5 xs:px-0 laptop:pt-0 xs:pt-8 laptop:pb-24 xs:pb-36" data-aos="fade-up">
+        <div class="flex justify-center items-center h-2/6">
+          <h1 class="text-bold laptop:text-23px xs:text-lg mb-5 font-overlock">SUPPORT US!</h1>
+        </div>
+        <div class="flex flex-col justify-between items-center h-4/6">
+          <div class="flex px-5 w-full mb-7">
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_1.png" class="w-full" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Josefa Escoda Memento Fund</em></p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_2.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Friends of HZB</em></p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_3.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>Friends of Ating Tahanan</em> </p>
+            </a>
+            <a href="#" class="p-3 w-3/12">
+              <img src="images/supportUs_4.png" class="w-full mb-2" alt="">
+              <p class="text-sm text-gray-800 font-normal text-center"><em>GSP & Friends Foundation, Inc.</em></p>
+            </a>
+          </div>
+          <a href="#" class="px-4 py-2 bg-darkpurple text-white">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full relative flex justify-center items-center">
+      <div class="absolute w-32 h-32 z-10 rounded-50% overflow-hidden shadow-lg">
+        <img src="images/footerLogo.png" class="h-full w-full" alt="">
+      </div>
+    </div>
+
+    <div class="w-full py-5 flex flex-col justify-center items-center mt-20">
+      <p class="text-gray-500 mb-2" data-aos="fade-in">901 Padre Faura Street, Ermita, Manila</p>
+      <p class="text-gray-500" data-aos="fade-in">Trunkline: (632) 8-5238331 to 42</p>
+      <div class="flex mobile:mb-10 mobile:mt-10 xs:mb-6 xs:mt-6">
+        <a href="#" class="text-gray-500 mb-2 hover:text-activeText px-2" data-aos="fade-in">About Us</a>
+        <a href="#" class="text-gray-500 mb-2 hover:text-activeText px-2" data-aos="fade-in">Contact Us</a>
+      </div>
+      <p class="text-gray-500" data-aos="fade-in">Follow us on social media:</p>
+      <div class="flex mb-10 mt-5">
+        <div class="p-2 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.facebook.com/girlscoutsofthephilippines/" target="https://www.facebook.com/girlscoutsofthephilippines/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://twitter.com/girlscoutsph" target="https://twitter.com/girlscoutsph"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.instagram.com/girlscoutsph/" target="https://www.instagram.com/girlscoutsph/"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.pinterest.ph/GirlScoutsPHILS/"target="https://www.pinterest.ph/GirlScoutsPHILS/"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <div class="p-2 ml-5 bg-iconbg mobile:text-5xl xs:text-2xl text-white overflow-hidden rounded-50%">
+          <a href="https://www.youtube.com/c/GIRLSCOUTSOFTHEPHILIPPINES1940" target="https://www.youtube.com/c/GIRLSCOUTSOFTHEPHILIPPINES1940"><i class="fab fa-youtube"></i></a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+
+    AOS.init()
+
+    function fadein (fadeinID) {
+      var parent = document.getElementById(fadeinID.id)
+      var child = parent.children
+      child[0].classList.remove('opacity-0')
+     }
+
+    function fadeout (fadeOutID) {
+      var parent = document.getElementById(fadeOutID.id)
+      var child = parent.children
+      child[0].classList.add('opacity-0')
+    }
+
+    var goUpp = document.querySelector('.goUp')
+    window.addEventListener('scroll', function() {
+      var scrolling = window.scrollY
+      if(scrolling == 0){
+        goUpp.classList.add('hidden')
+      } else{
+        goUpp.classList.remove('hidden')
+      }
+    })
+
+    function goUp () {
+      window.scrollTo({
+      top:0,
+      behavior:'smooth'
+      })
+    }
+
+    var swiper = new Swiper('.mySwiper', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop:true,
+      autoplay:{
+      delay:3000,
+      disableOnInteraction:false
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })
+
+    function hover (id) {
+      var hover_id = id.id
+      const parentt = document.getElementById(hover_id)
+      const child = parentt.children
+      child[2].classList.remove('h-0')
+    }
+
+    function leave (id) {
+      var hover_id = id.id
+      const parentt = document.getElementById(hover_id)
+      const child = parentt.children
+      child[2].classList.add('h-0')
+    }
+
+    var pressed = false
+    function nav2nd () {
+      if(pressed === false){
+        pressed = true
+        document.getElementById('nav2nd').classList.remove('h-0')
+      } else{
+        pressed = false
+        document.getElementById('nav2nd').classList.add('h-0')
+      }
+    }
+
+    var index0 = false
+    var index1 = false
+    var index2 = false
+
+    const click = document.querySelectorAll('.click')
+    click.forEach( function(element, index) {
+      element.addEventListener('click', function() {
+        if(index == 0){
+          if(index0 === false){
+            index0 =true
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.remove('h-0')
+          } else{
+            index0 = false
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.add('h-0')
+          }
+        }
+
+        if(index == 1){
+          if(index1 === false){
+            index1 = true
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.remove('h-0')
+           } else{
+            index1 = false
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.add('h-0')
+          }
+        }
+
+        if(index == 2){
+          if(index2 === false){
+            index2 = true
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.remove('h-0')
+          } else{
+            index2 = false
+            var siblingELement = element.nextElementSibling
+            siblingELement.classList.add('h-0')
+          }
+        }
+
+      })
+    })
+
+
+    </script>
+</body>
+</html>
