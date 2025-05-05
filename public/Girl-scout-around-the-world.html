@@ -19,94 +19,45 @@
   <div class="fixed h-16 w-16 bottom-5 right-5 hidden transition duration-500 rounded-50% z-50 flex justify-center items-center text-white goUp" onclick="goUp()" style="background-color: rgba(39, 39, 39, 0.582);">
     <i class="fas fa-chevron-up"></i>
   </div>
-    <nav class="relative w-full flex justify-center items-center h-24 shadow-lg z-10 font-bold" data-aos="fade-down">
-      <div class="w-full h-full flex flex-wrap laptop:justify-center xs:justify-between items-center">
-        <div class="h-full flex items-center mobile:w-80 xs:w-64">
-          <img src="images/gsp-logo.jpg" class="w-full" alt="">
-        </div>
-        <div class="h-full laptop:flex xs:hidden justify-end items-center w-8/12">
-          <div class="px-4 flex justify-center text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full">Home</div>
-          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="badges" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
-            <span>Badges</span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
-            <div class="absolute left-0 w-52 flex overflow-hidden h-0 bg-gray-300 justify-center items-center flex-col top-full">
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Twinkler Girl Scout</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Star Girl Scout</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Junior Girl Scout</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Senior Girl Scout</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Cadet Girl Scout</a>
-            </div>
-          </div>
-          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500  h-full">Circulars</div>
-            <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="council" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
-            <span>Council Locator</span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
-            <div class="absolute bg-gray-200 left-0 w-52 flex overflow-hidden h-0 justify-center items-center flex-col top-full">
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Nothern Luzon Region</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Capital Luzon Region</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Southern Luzon Region</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Visayas Region</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Eastern Mindanao Region</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">Western Mindanao Region</a>
-            </div>
-          </div>
-          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500  h-full">NP'S Message</div>
-          <div class="px-4 flex justify-center text-gray-500 hover:text-activeText items-center cursor-pointer hover:bg-gray-200 transition duration-500 relative h-full" id="shop" onmouseover = 'hover(this)' onmouseleave = 'leave(this)'>
-            <span>Shop NES </span> <span class="text-black ml-3"><i class="fas fa-sort-down"></i></span>
-            <div class="absolute bg-gray-200 left-0 w-52 flex overflow-hidden h-0 justify-center items-center flex-col top-full">
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-center text-black hover:text-activeText hover:bg-gray-300">NES FB Page</a>
-              <a href="#" class="w-full py-3 text-sm flex justify-center items-cente text-black hover:text-activeText hover:bg-gray-300">Shop</a>
-            </div>
-          </div>
-          <div class="px-4 flex justify-center text-black text-lg items-center cursor-pointer  h-full"><i class="fas fa-search"></i></div>
-            <div class="h-full bg-yellow-300 flex justify-center cursor-pointer items-center w-40">BE ONE OF US!</div>
-          </div>
-
-          <div class="text-2xl mobile:mr-10 xs:mr-5 hover:text-activeText transition duration-200 laptop:hidden xs:flex" onclick="nav2nd()">
-            <i class="fas fa-bars"></i>
-          </div>
+  <nav class="relative w-full flex justify-center items-center h-24 shadow-lg z-20 font-bold" data-aos="fade-down">
+    <div class="w-full h-full flex flex-wrap laptop:justify-center xs:justify-between items-center">
+      <div class="h-full flex items-center mobile:w-80 xs:w-64">
+        <img src="images/gsp-logo.jpg" class="w-full" alt="">
       </div>
-      <div class="absolute w-full bg-white transition duration-500 top-full items-between h-0 overflow-hidden laptop:hidden xs:flex flex-col" id="nav2nd">
-        <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
-          <div class="ml-5">Home</div>
-        </a>
-        <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
-          <div class="ml-5">Badges</div>
-            <span class="mr-5"><i class="fas fa-sort-down"></i>
-          </div>
-          <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Twinkler Girl Scout</a>
-            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Star Girl Scout</a>
-            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Junior Girl Scout</a>
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Senior Girl Scout</a>
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Cadet Girl Scout</a>
-          </div>
-          <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
-            <div class="ml-5">Circulars</div>
-          </a>
-          <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
-            <div class="ml-5">Council Locator</div>
-            <span class="mr-5"><i class="fas fa-sort-down"></i>
-          </div>
-          <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Nothern Luzon Region</a>
-            <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Southern Luzon Region</a>
-            <a href="" href="#" class="w-ful5l py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Capital Luzon Region</a>
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Visayas Region</a>
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Eastern Mindanao Region</a>
-            <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Western Mindanao Region</a>
-          </div>
-        <a href="#" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
-          <div class="ml-5">NP's Message</div>
-        </a>
-        <div class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md click">
-          <div class="ml-5">Shop NES</div>
-          <span class="mr-5"><i class="fas fa-sort-down"></i>
+      <div class="h-full laptop:flex xs:hidden justify-end items-center w-8/12">
+        <div class="px-4 flex justify-center items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full"><a href="index.html">Home</a></div>
+        <div class="px-4 flex justify-center items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full"><a href="Girl-scout-around-the-world.html">Girl Scout around the world</a></div>
+        <div class="px-4 flex justify-center items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full"><a href="Camp.html">Camp</a></div>
+        <div class="px-4 flex justify-center items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full"><a href="membership.html">Membership</a></div>
+        <div class="px-4 flex justify-center items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full"><a href="programs.html">Programs</a></div>
+        <div class="px-4 flex justify-center items-center cursor-pointer hover:bg-gray-200 transition duration-500 h-full"><a href="publication.html">Publication</a></div>
+       
+        <div class="px-4 flex justify-center text-black text-lg items-center cursor-pointer  h-full"><i class="fas fa-search"></i></div>
+          <div class="h-full bg-yellow-300 flex justify-center cursor-pointer items-center w-40">BE ONE OF US!</div>
         </div>
-        <div class="w-full flex flex-col h-0 overflow-hidden transition duration-500">
-          <a href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">NES FB Page</a>
-          <a href="" href="#" class="w-full py-2 px-10 text-sm hover:bg-gray-200 hover:text-activeText">Shop</a>
-        </div>
-      </div>
-    </nav>
+    </div>
+    <div class="absolute w-full bg-white transition duration-500 top-full items-between h-0 overflow-hidden laptop:hidden xs:flex flex-col" id="nav2nd">
+      <a href="index.html" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+        <div class="ml-5">Home</div>
+      </a>
+      <a href="Girl-scout-around-the-world.html" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+        <div class="ml-5">Girl Scout around the world</div>
+      </a>
+      <a href="camp.html" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+        <div class="ml-5">Camp</div>
+      </a>
+      <a href="membership.html" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+        <div class="ml-5">Membership</div>
+      </a>
+      <a href="programs.html" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+        <div class="ml-5">Programs</div>
+      </a>
+      <a href="publication.html" class="w-full py-3 flex justify-between items-center hover:bg-gray-200 hover:text-activeText text-md">
+        <div class="ml-5">Publication</div>
+      </a>
+      
+    </div>
+  </nav>
 
     <div class="w-full flex justify-center items-center">
       <div class="desktop:w-7/12 laptop:w-8/12 tablet:w-10/12 xs:w-11/12 flex flex-col justify-center items-center py-16">
